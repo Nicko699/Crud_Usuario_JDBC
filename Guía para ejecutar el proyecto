@@ -31,18 +31,7 @@ CREATE TABLE usuarios (
     correo VARCHAR(100) NOT NULL UNIQUE,
     clave VARCHAR(100) NOT NULL
 );
-📂 Estructura del proyecto
-bash
-Copiar código
-CrudUsuario_JDBC/
-├── src/
-│   ├── main/java/
-│   │   ├── dao/         # Clases de acceso a datos
-│   │   ├── model/       # Entidades del sistema
-│   │   ├── util/        # Clase para conexión JDBC
-│   │   └── Main.java    # Clase principal para ejecutar
-├── lib/                 # Dependencias externas (si aplica)
-└── README.md
+
 ▶️ Cómo ejecutar el proyecto
 Clona el repositorio:
 
@@ -54,16 +43,14 @@ Configura la conexión en la clase Conexion.java (o similar):
 
 java
 Copiar código
-private static final String URL = "jdbc:mysql://localhost:3306/crud_usuarios";
-private static final String USER = "root";
-private static final String PASSWORD = "tu_contraseña";
-Compila y ejecuta el proyecto desde tu IDE o terminal:
+Nota:este código funciona si en la bd que ustedes crean la id de la entidad se crea automaticamente
+Nota2: En la bd del proyecto si hay un usuario:rooot y contraseña=123, por favor cambiarla si va a probar este código
+Nota3:Asegurense de tener el mismo nombre de la bd crud_usuario_jdbc
 
-bash
-Copiar código
-javac -cp .;mysql-connector-j-8.0.xx.jar Main.java
-java -cp .;mysql-connector-j-8.0.xx.jar Main
-(Cambia la versión del conector MySQL según la que tengas en lib/)
+ String url= "jdbc:mysql://localhost:3306/crud_usuarios";
+ String usuario = "tu usuario";
+ String password = "tu contraseña";
+Compila y ejecuta el proyecto desde tu IDE o terminal:
 
 🛠️ Funcionalidades
 Crear usuario 👤
