@@ -23,14 +23,14 @@ Usa la base de datos y crea la tabla usuarios:
 
 sql
 Copiar código
-USE crud_usuarios;
-
-CREATE TABLE usuarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL,
-    correo VARCHAR(100) NOT NULL UNIQUE,
-    clave VARCHAR(100) NOT NULL
-);
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(20) COLLATE utf8mb3_spanish_ci NOT NULL,
+  `apellido` varchar(20) COLLATE utf8mb3_spanish_ci NOT NULL,
+  `edad` int NOT NULL,
+  `correo` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_spanish_ci;
 
 ▶️ Cómo ejecutar el proyecto
 Clona el repositorio:
