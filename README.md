@@ -79,5 +79,4 @@ Asegúrate de tener el driver de MySQL (mysql-connector-j) en la carpeta lib/ o 
 
 Si usas WAMP/XAMPP, revisa el puerto (generalmente 3306).
 
-✍️ Autor: Tu Nombre
-📅 Año: 2025
+
