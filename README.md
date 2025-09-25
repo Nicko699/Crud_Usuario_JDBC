@@ -1,4 +1,4 @@
-# CRUD Usuario con JDBC
+# CRUD Usuario con JDBC.
 
 Este proyecto es un **CRUD (Crear, Leer, Actualizar y Eliminar) de usuarios** desarrollado en **Java** utilizando **JDBC** para la conexión con base de datos MySQL.  
 
